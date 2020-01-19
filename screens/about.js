@@ -1,74 +1,83 @@
 import React from 'react';
-import { StyleSheet, View, Text, Dimensions, Image, ScrollView, Button, SafeAreaView } from 'react-native';
-import { globalStyles } from '../styles/global';
-
-const width = '100%';
-const height = '100%';
-
+import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
+import {  Button } from 'react-native-elements'
+import { globalStyles, colors } from '../styles/global';
 
 export default function About() {
   return (
       
+    <View style={globalStyles.container}>
       
-    <ScrollView style={globalStyles.container}>
-      
-      <SafeAreaView>
+      {/* <SafeAreaView> */}
       
         <View style={styles.rating}> 
             <Image style={styles.img} source={require('../assets/rede.png')} />
         </View>
-        <View style={styles.item}>
-            <Text style={styles.txt}>Somos um App para as mulheres. Estamos aqui para impusionar o apoio mútuo que já existe entre as mulheres e amplificar a sororidade das Amazonas.
-     
+        <ScrollView style={styles.item}>
+            <Text style={styles.txt}>
+            Somos um App para as mulheres. Estamos aqui para impusionar o apoio mútuo que já existe entre as mulheres 
+            e amplificar a sororidade das Amazonas.
+            {"\n"} {"\n"}
             Em Rede e conectadas, podemos juntas inovar, empreender, educar, cuidar, criar e nos fortalecer.
-      
+            {"\n"} {"\n"}
             A Rede das Amazonas faz parte do presente, resgata a solidariedade na ancestralidade das matriarcas e confia que o "Future is female"
             </Text>
-        </View>
+        </ScrollView>
         
         <View style={styles.btx}>
-            <Button title='Next' style={styles.bt} /> 
+            <Button title='Next' buttonStyle={styles.bt} /> 
         </View> 
-      </SafeAreaView>
+      {/* </SafeAreaView> */}
         
-    </ScrollView>
+    </View>
 
   );
 }
 
 const styles = StyleSheet.create({
     rating: {
-        marginTop: -40,
-        width:320,
-        height: 320
+      flex: 1,
+      // backgroundColor: "#000",
+      // justifyContent: "center",
+      alignItems: "center"
+        // marginTop: 0,
+        // width:"100%",
+        // height: 220,
     },
     
-    btx:{
-        height: 100,
-    }, 
-    
     item: {
-    padding: 16,
-    marginTop: 16,
-    marginBottom: 16,
-    borderColor: '#B1B0D8',
-    borderWidth: 2,
-    borderStyle: "dashed",
-    borderRadius: 10,
+      flex: 2,
+      // backgroundColor: "coral",
+      padding: 10,
+      marginVertical: 16,
+      borderWidth: 2,
+      borderColor: '#B1B0D8',
+      borderStyle: "dashed",
+      borderRadius: 10,
   },
     
     txt:{
-        fontFamily: 'nunito-regular',
-         fontSize:24,
-        alignItems: 'center',
-        alignSelf: 'center'
+      fontFamily: 'nunito-regular',
+      fontSize:20,
+      textAlign: "justify",
+      // alignItems: 'center',
+      // alignSelf: 'center'
     
     },
     
     img: {
-        width,
-        height,
+        width: "80%",
+        height: "100%",
+        marginTop: -5
     },
+
+    // btx:{
+    //   padding: 5,
+    // }, 
+
+    bt: {
+      backgroundColor: colors.purple
+    }
 
     
     
