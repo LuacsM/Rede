@@ -15,6 +15,12 @@ const RootDrawerNavigator = createDrawerNavigator({
   About: {
     screen: AboutStack,
   },
-});
+},
+  {
+    drawerType: "back",
+    hideStatusBar: true,
+    statusBarAnimation: "fade"
+  }
+);
 
 export default createAppContainer(RootDrawerNavigator);

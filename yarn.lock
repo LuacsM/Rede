@@ -4289,6 +4289,13 @@ react-native-status-bar-height@^2.2.0:
   resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.4.0.tgz#de8cee4bb733a196167210d2d0bc1fa10acba3e3"
   integrity sha512-pWvZFlyIHiuxLugLioq97vXiaGSovFXEyxt76wQtbq0gxv4dGXMPqYow46UmpwOgeJpBhqL1E0EKxnfJRrFz5w==
 
+react-native-swiper@^1.6.0-nightly.5:
+  version "1.6.0-nightly.5"
+  resolved "https://registry.yarnpkg.com/react-native-swiper/-/react-native-swiper-1.6.0-nightly.5.tgz#894319918ff22680c325b8052457ccf213a7c7cd"
+  integrity sha512-0siIUvD7FcGPSjRtsMyTWWmosUA+kJNT0WbJ0lf3Drp8vxeuWAg5kSmvQO+dJpISugcBWpfBc0OBDC5fBl+DsA==
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-view-shot@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-3.0.2.tgz#daccaec5b8038a680b17533ff7e72876e68c7d0d"
